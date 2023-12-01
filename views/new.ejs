@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/new.css"> <!-- Link to external CSS file -->
+    <title>Student Form</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/students" method="POST" class="student-form">
+            <div class="mb-3">
+                <label for="naam" class="form-label">Name:</label>
+                <input type="text" class="form-control" name="name" id="naam" placeholder="Name">
+            </div>
+            <div class="mb-3">
+                <label for="college" class="form-label">College:</label>
+                <input type="text" class="form-control" name="college" id="college" placeholder="Name of College">
+            </div>
+            <div class="mb-3">
+                <label for="degree" class="form-label">Degree:</label>
+                <input type="text" class="form-control" name="degree" id="degree" placeholder="Name of Degree">
+            </div>
+            <div class="mb-3">
+                <label for="ten" class="form-label">Tenth:</label>
+                <input type="number" class="form-control" name="tenth" id="ten" placeholder="(In percentage)">
+            </div>
+            <div class="mb-3">
+                <label for="twel" class="form-label">Twelth:</label>
+                <input type="number" class="form-control" name="twelth" id="twel" placeholder="(In percentage)">
+            </div>
+            <div class="mb-3">
+                <label for="cpi" class="form-label">CPI:</label>
+                <input type="number" class="form-control" name="cpi" id="cpi" placeholder="Till date">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="text" class="form-control" name="email" id="email" placeholder="abc@gmail.com">
+            </div>
+            <button type="submit" class="btn btn-success">Add</button>
+        </form>
+    </div>
+</body>
+</html>

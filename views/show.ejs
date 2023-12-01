@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/show.css"> <!-- Link to external CSS file -->
+    <title>Resume List</title>
+</head>
+<body>
+    <h2>Resumes</h2>
+    <div class="resume-container">
+        <div class="resume-list">
+            
+            <% for(let res of foundResume){ %>
+                <div class="resume-card">
+                    <h3 class="name"><%= res.name %></h3>
+                    <p class="percentage">Tenth Percentage: <%= res.tenth %></p>
+                    <p class="percentage">Twelth Percentage: <%= res.twelth %></p>
+                    <p class="cpi">Current CPI: <%= res.cpi %></p>
+                    <p class="email">Email: <%= res.email %></p>
+                    <button onclick="sendMail('<%= res.email %>')" class="send-mail-btn">Send Mail</button>
+                </div>
+            <% } %>
+        </div>
+    </div>
+    <script>
+        // Client-side JavaScript function
+    function sendMail(email) {
+        // Make an AJAX request to your server-side route
+        fetch(`/send-mail?email=${email}`, {
+            method: 'POST',
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            // Handle the response as needed
+        })
+        .catch(error => console.error('Error:', error));
+    }
+    </script>
+    
+</body>
+</html>

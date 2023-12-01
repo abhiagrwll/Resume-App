@@ -1,0 +1,76 @@
+/* Custom styles for the resume list */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.resume-container {
+    text-align: center;
+    display: flex;
+}
+
+.resume-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.resume-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.resume-card:hover {
+    transform: scale(1.05);
+}
+
+.name {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.percentage {
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.cpi {
+    color: #28a745;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+.email {
+    color: #dc3545; /* Red color for the email field */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.send-mail-btn {
+    background-color: #28a745; /* Green color for the button */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.send-mail-btn:hover {
+    background-color: #218838; /* Darker green color on hover */
+}

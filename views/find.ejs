@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/find.css">
+    <title>Student Search</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/students/show" method="POST" class="search-form">
+            <div class="form-group">
+                <label for="college">Choose a College:</label>
+                <select name="college" id="college" class="form-control">
+                    <option value="gla">GLA</option> 
+                    <option value="amity">Amity</option> 
+                    <option value="galgotia">Galgotia</option> 
+                    <option value="glbajaj">GL BAJAJ</option> 
+                    <option value="iigj">IIGJ</option> 
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="degree">Choose a Degree:</label>
+                <select name="degree" id="degree" class="form-control">
+                    <option value="engineering">Engineering</option> 
+                    <option value="bba">BBA</option> 
+                    <option value="llb">LLB</option> 
+                    <option value="bcom">BCOM</option> 
+                    <option value="designing">Designing</option>
+                </select>
+            </div>  
+            <div class="form-group">
+                <label for="cpi">Choose base CPI:</label>
+                <select name="cpi" id="cpi" class="form-control">
+                    <option value="9">>9</option> 
+                    <option value="8">>8</option> 
+                    <option value="7">>7</option> 
+                    <option value="6">>6</option> 
+                </select>
+            </div>  
+            <button type="submit" class="btn btn-success">Find</button>
+        </form>
+    </div>
+</body>
+</html>
